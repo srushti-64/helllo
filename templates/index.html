@@ -7,31 +7,38 @@
 <body>
 
 <header>
-    <h1>"Code. Create. Inspire."</h1>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-img">
+    <h1>Your Name</h1>
+    <p>1st Year BCA Student – Kristu Jayanti College</p>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <p>I am a passionate developer who builds web applications.</p>
+    <h2>Core Subjects</h2>
+    <p>C, Python, HTML</p>
 </section>
 
 <section>
-    <h2>Skills</h2>
+    <h2>My Skills</h2>
     <ul>
-        <li>Python</li>
-        <li>Flask</li>
-        <li>MySQL</li>
-        <li>HTML & CSS</li>
+        <li>Dancing</li>
+        <li>Singing</li>
+        <li>Crafting</li>
+        <li>Good with People</li>
     </ul>
 </section>
 
 <section>
-    <h2>Contact</h2>
+    <h2>My Project</h2>
+    <p>Contact Form Website using Flask & MySQL</p>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
     <form action="/contact" method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send</button>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
 </section>
 
