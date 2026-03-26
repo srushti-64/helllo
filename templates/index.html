@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>"Code. Create. Inspire."</h1>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>I am a passionate developer who builds web applications.</p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>Flask</li>
+        <li>MySQL</li>
+        <li>HTML & CSS</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <form action="/contact" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</body>
+</html>
